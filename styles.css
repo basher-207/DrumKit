@@ -1,3 +1,4 @@
+
 body {
   text-align: center;
   background-color: #283149;
@@ -45,12 +46,10 @@ footer {
 }
 
 .set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 10% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
 }
 
 .pressed {
@@ -58,9 +57,6 @@ footer {
   opacity: 0.5;
 }
 
-.red {
-  color: red;
-}
 
 .drum {
   outline: none;
@@ -78,4 +74,11 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+
+@media (max-width: 550px){
+  h1{
+    font-size: 15vw;
+  }
 }

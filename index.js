@@ -6,7 +6,7 @@ document.addEventListener("keydown", function(e){
 });
 
 for(i = 0; i <= buttons.length; i++){
-    buttons[i].addEventListener("click",() => {
+    buttons[i].addEventListener("click", function() {
         buttonAnimation(this);
         makeSound(this.innerHTML);
     });
@@ -50,6 +50,6 @@ function makeSound(letter){
             snare.play();
             break;
 
-    default: console.log(this.innerHTML);
+    default: console.log(letter);
     }
 };
